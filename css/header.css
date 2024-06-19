@@ -1,0 +1,43 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 58px 0;
+    font-family: var(--font-family);
+    z-index: 10;
+  }
+  .header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+  }
+  /*Если классам не навешаны свойста, просто удаляй их из кода. Два класса ниже удали*/
+  .header__list {
+    display: flex;
+    gap: 40px;
+  }
+  .header__link {
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    transition: var(--transition);
+  }
+  .header__link:hover {
+    color: orange;
+  }
+  .header__phone {
+    font-size: 17px;
+    text-align: right;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+  @media (max-width: 768px) {
+    .header__list {
+      display: none;
+    }
+  }

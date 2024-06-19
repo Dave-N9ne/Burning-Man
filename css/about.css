@@ -1,0 +1,90 @@
+.about {
+    padding: 114px 0 57px;
+  }
+.about__title {
+  margin-bottom: 56px;
+  font-size: 50px;
+  line-height: 75px;
+  text-transform: uppercase;
+}
+.about__title:hover .about__title_red {
+  color: red;
+  transition: var(--transition);
+}
+.about__content {
+  display: flex;
+  gap: 36px;
+}
+.about-article {
+  width: 564px;
+}
+.about__content__rebuild .about-article__desc {
+  margin-bottom: 129px; /* 113px + 16px . тут у меня получилась высота блока 130px, когда в figm'e 146px. из-за этого я сейчас мучался и решил прибавить margin. ты охуеть как был прав насчет размеров*/
+}                       
+.about__content__drives .about-article__desc {
+  margin-bottom: 77px; /* 67px + 10px . тут аналогично. здесь word-spacing почти во всех строках разный */
+}
+.about-article__title {
+  margin-bottom: 19px;
+  font-size: 25px;
+  line-height: 38px;
+}
+.about-article__desc {
+  text-align: justify;
+}
+.about__content__drives .about-article__desc::first-line {
+  word-spacing: 0.5em; /* тут я на глаз выставил) */
+}
+.about-article__gallery {
+  display: flex;
+  gap: 0 29px;
+}
+.about-article__img {
+  width: 270px;
+  height: 344px;
+  border-radius: var(--border-radius);
+}
+.about-article__img-3 {
+  width: 570px;
+  height: 344px;
+  border-radius: var(--border-radius);
+}
+@media (max-width: 1200px) {
+  .about__title {
+   text-align: center; 
+  }
+  .about__content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .about__content {
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+  }
+  .about__content__rebuild .about-article__desc {
+    margin-bottom: 64px;
+  } 
+  .about-article {
+    width: min(290px, 564px)
+  }
+  .about-article__gallery {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  .about-article__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .about-article__img-3 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}

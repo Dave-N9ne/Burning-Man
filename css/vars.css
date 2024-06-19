@@ -1,0 +1,8 @@
+:root {
+    --text-color: #fff;
+    --font-family: "Anton", sans-serif;
+    --second-family: "Open Sans", sans-serif;
+    --dark-text-color: #000;
+    --transition: 0.2s ease-in-out;
+    --border-radius: 5px;
+}

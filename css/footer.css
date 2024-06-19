@@ -1,0 +1,22 @@
+.footer {
+    padding: 57px 0 80px;
+    font-size: 15px;
+  }
+  .footer__copyright {
+    display: flex;
+    gap: 55px;
+  }
+  .footer-article {
+    width: 244px;
+    height: 49px;
+  }
+  .footer-article_size_14 {
+    font-size: 14px;
+  }
+  @media (max-width: 550px) {
+    .footer__copyright {
+      margin: 0 auto;
+      display: inline-block;
+      gap: 25px;
+    }  
+  }
